@@ -12,8 +12,8 @@
 ## 安装与运行
 ### 1. 克隆代码
 ```sh
-git clone https://github.com/your-repo/student-management.git
-cd student-management
+git clone https://github.com/18757219260/Student_Management_System.git
+cd ~yourdir/student-management
 ```
 
 ### 2. 配置数据库
