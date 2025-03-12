@@ -4,7 +4,7 @@
 本项目是一个基于 Vue 3 + Node.js（Express）+ MariaDB 的学生管理系统，支持学生信息的增删改查（CRUD），并提供 RESTful API。
 
 ## 技术栈
- **前端**：Vue 3（Composition API）
+- **前端**：Vue 3（Composition API）
 - **后端**：Node.js + Express
 - **数据库**：MariaDB（或 MySQL）
 - **其他依赖**：cors、body-parser、mariadb
