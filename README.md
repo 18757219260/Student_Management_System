@@ -25,10 +25,10 @@ USE student_db;
 CREATE TABLE students (
     id VARCHAR(20) PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    score1 INT NOT NULL,
-    score2 INT NOT NULL,
-    score3 INT NOT NULL,
-    avg INT NOT NULL
+    score1 float NOT NULL,
+    score2 float NOT NULL,
+    score3 float NOT NULL,
+    avg float NOT NULL
 );
 ```
 
@@ -46,9 +46,13 @@ cd frontend  # 进入前端目录
 npm install  # 安装依赖
 npm run dev  # 启动前端
 ```
-前端运行在 `http://localhost:5173`
+前端运行在 `http://localhost:8080`
 
 ## API 说明
+可以下载一个postman，在里面可以很方便地测试接口
+```
+sudo snap install postman
+```
 ### 获取所有学生
 ```
 GET /students
@@ -77,7 +81,7 @@ DELETE /students/:id
 
 ### 根据 ID 查询学生
 ```
-GET /students/id/:id
+GET /students/id/:id #如 Get /students/id/1
 ```
 - **功能**：根据学号查询学生
 
@@ -90,8 +94,7 @@ GET /students/name/:name
 ## 注意事项
 - 数据库连接信息可在 `server.js` 中修改
 - 生产环境建议使用 `.env` 存储数据库配置
-- 确保后端和数据库正确连接，否则 API 将无法使用
+- 确保后端和数据库正确连接，否则 API 将无法使用(我的是mariabd,后端代码中用的是连接池后面还要释放)
 
-## 许可证
-MIT License
+
 
