@@ -16,9 +16,9 @@ app.use(bodyParser.json());
 
 // 创建数据库连接池
 const db = mariadb.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'woainignn1',
+    host: 'your host',
+    user: 'your user',
+    password: 'your psaaword',
     database: 'student_db',
     connectionLimit: 10, // 增大连接池容量
     idleTimeout: 30000,  // 30秒空闲超时
